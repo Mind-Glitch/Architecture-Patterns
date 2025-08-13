@@ -2,3 +2,7 @@
 .git/
 
 _ReSharper.Caches/
+
+Patterns/bin/
+Patterns/obj/
+

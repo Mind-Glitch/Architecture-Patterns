@@ -1,4 +1,6 @@
-﻿namespace Patterns;
+﻿using System;
+
+namespace Patterns;
 
 internal static class Logger
 {

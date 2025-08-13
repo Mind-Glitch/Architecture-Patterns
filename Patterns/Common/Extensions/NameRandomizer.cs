@@ -1,4 +1,7 @@
-﻿namespace Patterns.Extensions;
+﻿using System;
+using System.Collections.Generic;
+
+namespace Patterns.Extensions;
 
 internal static class NameRandomizer
 {
