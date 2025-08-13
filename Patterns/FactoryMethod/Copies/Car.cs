@@ -4,11 +4,11 @@ public class Car : TransportBase
 {
     public override void Deliver()
     {
-        Logger.Info("Car is delivering ...");
+        Logger.Info($"Car [{GetName}] is delivering ...");
     }
 
     public override void Recall()
     {
-        Logger.Warning("Car is recalled.");
+        Logger.Warning($"Car [{GetName}] is recalled.");
     }
 }

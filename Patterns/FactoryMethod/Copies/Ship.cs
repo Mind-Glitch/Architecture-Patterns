@@ -4,11 +4,11 @@ public class Ship : TransportBase
 {
     public override void Deliver()
     {
-        Logger.Info("Ship is delivering ...");
+        Logger.Info($"Ship [{GetName}] is delivering ...");
     }
 
     public override void Recall()
     {
-        Logger.Warning("Ship is recalled.");
+        Logger.Warning($"Ship [{GetName}] is recalled.");
     }
 }

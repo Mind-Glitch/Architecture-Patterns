@@ -4,11 +4,11 @@ internal class Truck : TransportBase
 {
     public override void Deliver()
     {
-        Logger.Info("Truck is delivering ...");
+        Logger.Info($"Truck [{GetName}] is delivering ...");
     }
 
     public override void Recall()
     {
-        Logger.Warning("Truck is recalled");
+        Logger.Warning($"Truck [{GetName}] is recalled");
     }
 }

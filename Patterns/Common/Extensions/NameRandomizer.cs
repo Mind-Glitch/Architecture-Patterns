@@ -32,7 +32,11 @@ internal static class NameRandomizer
         "Mountain",
         "Storm"
     ];
-
+    
+    /// <summary>
+    /// SHOULD NOT BE CHANGED. Violates the Single Responsibility Principle! .
+    /// </summary>
+    /// <returns></returns>
     internal static string GenerateName()
     {
         return $"{adjectives[Random.Shared.Next(adjectives.Count)]} " +

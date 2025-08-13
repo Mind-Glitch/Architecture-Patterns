@@ -4,5 +4,15 @@ namespace Patterns;
 
 public class Identifiable : IIdentifiable
 {
-    public string GetName { get; } = NameRandomizer.GenerateName();
+    protected Identifiable()
+    {
+        GetName = NameRandomizer.GenerateName();
+    }
+
+    protected Identifiable(string name)
+    {
+        GetName = name;
+    }
+
+    public string GetName { get; }
 }
