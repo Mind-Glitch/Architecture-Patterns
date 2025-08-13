@@ -8,13 +8,19 @@ class Program
     static void Main(string[] args)
     {
         Logger.Log("Architecture Patterns demonstration");
-
+        Logger.Warning("Structural");
         /* Factory method */
-        Logger.Info("FactoryMethod :");
+        Logger.Log("\nFactoryMethod :");
         FactoryMethod.Demo.Run();
 
         /* AbstractFactory */
-        Logger.Info("AbstractFactory :");
+        Logger.Log("\nAbstractFactory :");
         AbstractFactory.Demo.Run();
+
+        Logger.Log("\nBuilder :");
+        Builder.Demo.Run();
+
+        Logger.Log("\nPrototype :");
+        Prototype.Demo.Run();
     }
 }
